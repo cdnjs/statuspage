@@ -1,0 +1,30 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139601399-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139601399-2');
+</script>
+
+<!-- DOM Manipulation -->
+<script>
+    // Inject custom header buttons after the subscribe button
+    function addButton(name, link, color) {
+        var a = document.createElement("a");
+        a.innerText = name;
+        a.href = link;
+        a.target = "_blank";
+        a.className = "flat-button";
+        a.style.marginLeft = "1em";
+        if (color) a.style.backgroundColor = color;
+        document.querySelector(".updates-dropdown-container").appendChild(a);
+    }
+
+    // Custom status twitter button
+    addButton("@cdnjsStatus on Twitter", "https://twitter.com/cdnjsStatus", "#1da1f2");
+
+    // Fix custom masthead subscribe button
+    document.getElementById("show-updates-dropdown").className += " flat-button";
+</script>
