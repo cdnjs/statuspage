@@ -21,3 +21,4 @@ any manipulation of the DOM will need to be done through Javascript that gets in
 
  - Color theme: [colors.md](colors.md)
  - Custom CSS: [custom-css.css](custom-css.css)
+ - Custom Header HTML: [custom-header.html](custom-header.html)
