@@ -1,0 +1,195 @@
+/***********************
+ * Consistent rounding *
+ ***********************/
+.layout-content.status.status-index .components-section .components-container.one-column,
+.layout-content.status.status-index .custom-metrics-container .metrics-container .metric {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+/*********
+ * Pills *
+ *********/
+.layout-content.status.status-index .custom-metrics-container .timeframes-container .timeframe,
+.layout-content.status.status-full-history .history-nav a,
+.layout-content .pagination a {
+    padding: .2em .8em .05em !important;
+    text-align: center !important;
+    border: none !important;
+    border-radius: .8em !important;
+    -webkit-transition: all .2s !important;
+    -o-transition: all .2s !important;
+    transition: all .2s !important;
+}
+
+.layout-content .pagination a {
+    padding: .2em .6em !important;
+    width: auto !important;
+    height: auto !important;
+    font-size: 0.9em !important;
+    line-height: 1 !important;
+}
+
+.layout-content.status.status-index .custom-metrics-container .timeframes-container .timeframe.active,
+.layout-content.status.status-full-history .history-nav a.current,
+.layout-content .pagination a:not(.disabled) {
+    background: #D9643A; /* LINK COLOR */
+}
+
+.layout-content.status.status-index .custom-metrics-container .timeframes-container .timeframe:not(.active):hover,
+.layout-content.status.status-full-history .history-nav a:not(.current):hover,
+.layout-content .pagination a:not(.disabled):hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.layout-content .pagination a:not(.disabled):hover i::before {
+    color: #D9643A; /* LINK COLOR */
+}
+
+.layout-content.status.status-full-history .history-nav {
+    border: none;
+}
+
+/****************
+ * Fix tooltips *
+ ****************/
+#uptime-tooltip {
+    border: none !important;
+    background: transparent !important;
+}
+
+#uptime-tooltip .tooltip-box,
+#uptime-tooltip #box-arrow {
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+
+#uptime-tooltip #box-arrow {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+#uptime-tooltip .pointer-smaller {
+    border-bottom-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+#uptime-tooltip .outage-field {
+    background: rgba(100, 100, 100, 0.4) !important;
+}
+
+#uptime-tooltip .related-events .related-event .related-event-link {
+    color: #EBEBEB !important; /* FONT COLOR */
+}
+
+/*****************************
+ * Uniform status background *
+ *****************************/
+.layout-content.status.status-index .components-section .components-container.one-column, .layout-content.status.status-index .custom-metrics-container .metrics-container .metric {
+    background-color: #343535;
+}
+
+/************************
+ * Hide separator lines *
+ ************************/
+body.status .layout-content.status .border-color, hr, .tooltip-base, .markdown-display table {
+    border-color: transparent;
+}
+
+/************************
+ * Past incidents lines *
+ ************************/
+body.status .layout-content.status .date.border-color {
+    border-color: #E0E0E0;
+}
+
+/*****************
+ * Overall width *
+ *****************/
+.container {
+    max-width: 880px;
+}
+
+/**********************
+ * Fix subscribe text *
+ **********************/
+.updates-dropdown-container .updates-dropdown .updates-dropdown-section {
+    color: #000;
+}
+
+/*********************
+ * Tooltip '?' color *
+ *********************/
+.tooltip-base {
+    color: #B9B9BA;
+}
+
+/*****************
+ * Custom header *
+ *****************/
+.custom-header-bar {
+    text-align: center;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    color: #EBEBEB; /* FONT COLOR */
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #D9643A; /* LINK COLOR */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.custom-header-navigation {
+    min-width: 520px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    line-height: 23px;
+    white-space: nowrap;
+}
+
+.custom-header-navigation li {
+    display: inline-block;
+    padding-right: 5px;
+    height: 33px;
+    vertical-align: top
+}
+
+.custom-header-navigation li:last-child {
+    padding-right: 0
+}
+
+.custom-header-navigation a {
+    padding: 5px;
+    display: inline-block;
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.custom-header-navigation a:hover {
+    text-decoration: none
+}
+
+.custom-header-navigation h1 {
+    font-size: inherit;
+    display: inline-block;
+    line-height: 0;
+    margin: 0
+}
+
+.custom-header-navigation a {
+    color: #EBEBEB; /* FONT COLOR */
+}
+
+.custom-header-navigation a:hover {
+    color: #D9643A; /* LINK COLOR */
+    text-decoration: none
+}
+
+/*******************
+ * Custom masthead *
+ *******************/
+.custom-masthead {
+    text-align: center;
+}
