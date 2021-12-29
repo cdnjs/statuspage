@@ -1,10 +1,19 @@
-/***********************
- * Consistent rounding *
- ***********************/
+/**************************
+ * Consistent rounding/bg *
+ **************************/
+.layout-content.status.status-index .page-status,
+.layout-content.status.status-index .components-section .components-container.one-column,
+.layout-content.status.status-index .custom-metrics-container .metrics-container .metric {
+    border-radius: 4px;
+}
+
+.availability-time-line-graphic rect {
+  rx: 4px;
+}
+
 .layout-content.status.status-index .components-section .components-container.one-column,
 .layout-content.status.status-index .custom-metrics-container .metrics-container .metric {
     background: rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
 }
 
 /*********
@@ -192,4 +201,58 @@ body.status .layout-content.status .date.border-color {
  *******************/
 .custom-masthead {
     text-align: center;
+}
+
+/**********
+ * Status *
+ **********/
+.layout-content.status.status-index .page-status {
+    border: none;
+    text-shadow: none;
+}
+
+/***********
+ * Buttons *
+ ***********/
+.flat-button,
+.layout-content.status .masthead-container .updates-dropdown-container .show-updates-dropdown {
+    box-shadow: none;
+    text-shadow: none;
+}
+
+/***********
+ * Metrics *
+ ***********/
+.metric .metric-meta {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin: .75rem 0 .125rem;
+}
+
+.metric .metric-meta .metric-name,
+.metric .metric-meta .metric-average {
+    display: inline-block;
+}
+
+.metric .metric-meta .metric-average {
+    float: right;
+}
+  
+
+.metric .highcharts-background {
+    fill: none;
+}
+
+.custom-metrics-container .timeframes-container .timeframe {
+    font-size: .85rem;
+    color: #D9643A; /* LINK COLOR */
+    margin: .25em 0 0 .5em;
+}
+
+.custom-metrics-container .timeframes-container #system-metrics {
+    font-size: .85rem;
+    font-weight: normal;
+    color: #B9B9BA;
+    pointer-events: none;
 }
