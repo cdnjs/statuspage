@@ -27,4 +27,12 @@
 
     // Fix custom masthead subscribe button
     document.getElementById("show-updates-dropdown").className += " flat-button";
+  
+    // Move metrics to components
+    var metrics = [].slice.call(document.getElementsByClassName('metrics-container')[0].children);
+    var components = [].slice.call(document.getElementsByClassName('components-container')[0].children);
+    for (var i = 0; i < metrics.length; i++) {
+        components[i].appendChild(metrics[i]);
+    }
+    document.getElementsByClassName('components-section')[0].appendChild(document.getElementsByClassName('custom-metrics-container')[0]);
 </script>
